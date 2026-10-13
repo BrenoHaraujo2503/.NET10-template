@@ -1,0 +1,19 @@
+@Boilerplate.Api_HostAddress = http://localhost:5122
+
+GET {{Boilerplate.Api_HostAddress}}/api/v1/products
+Accept: application/json
+
+###
+
+POST {{Boilerplate.Api_HostAddress}}/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard",
+  "description": "Hot-swappable switches",
+  "price": 399.90
+}
+
+###
+
+GET {{Boilerplate.Api_HostAddress}}/health
